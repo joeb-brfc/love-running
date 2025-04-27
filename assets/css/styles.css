@@ -1,3 +1,17 @@
+/*importing fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap')
+
+#oswaldTest {
+    font-family: 'Oswald', sans-serif;
+    color: #3a3a3a;
+    
+    
+}
+#latoTest {
+    font-family: 'Lato', sans-serif;
+    color: #3a3a3a;
+    
+}
 /*Asterisk wildcard selector to override default styles added by the browser*/
 * {
     margin: 0;
@@ -11,6 +25,7 @@ body {
     flex-direction: column;
     /*generic project styles*/
     color :h3a3a3;
+    font-family: lato, sans-serif;
 }
 /*Header*/
 header {
