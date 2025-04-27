@@ -4,7 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* General styles */
+body {
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    /*generic project styles*/
+    color :h3a3a3;
+}
 /*Header*/
 header {
     background-color: lightcoral;
@@ -13,6 +20,8 @@ header {
 /*main content*/
 main {
     background-color: lightblue;
+    /*Make main element take up surplus spcace to push footer to bottom*/
+    flex: 1 0 auto;
 }
 
 /*footer*/
