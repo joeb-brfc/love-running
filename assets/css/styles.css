@@ -107,7 +107,7 @@ main {
 }
 /*gallery*/
 #photos img{
-    width:100%
+    width:100%;
     line-height:1em;
 
 }
@@ -185,9 +185,15 @@ hr{
     #times h3{
         color:#fafafa;
     }
-
-/*Media query: tablets and larger (768px and up)*/
-@media screen and (min-width: 768px) {
+/*Media query for large or landscape photos (576px and up */
+@media screen and (min-width :576px) {
+    #photos{
+        column-count:2;
+        column-gap:0;
+    }
+}
+/*Media query: tablets and larger (576px and up)*/
+@media screen and (min-width: 576px) {
     /*Header*/
     nav {
         display: block;
@@ -236,12 +242,19 @@ hr{
     #benefits-mental >div{
         text-align:end;
         align-self: flex-end;
-}
+    }
+    #photos{
+        column-count:3;
+    }
+
 } /* Closing @media screen and (min-width: 768px) */
 /* Larger devices (laptops / desktops 990px and up) */
 @media screen and (min-width: 992px){
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a; 
+    }
+    #photos{
+        column-count:4;
     }
 } 
 
